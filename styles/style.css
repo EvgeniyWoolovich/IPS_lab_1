@@ -1,46 +1,46 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.border-container {
-    max-width: 1440px;
+.page-container {
     margin: 0 auto;
+    max-width: 1440px;
+}
+
+.header {
+    margin-bottom: 89px;
+    padding: 17px 0;
+}
+
+.header__container,
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container {
-    max-width: 960px;
     margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
 }
 
 .logo {
-    font-size: 26px;
-    font-family: 'Lora', sans-serif;
-    color: #2E2E2E;
     text-decoration: none;
     transition: color 0.3s;
+    font: 26px 'Lora', sans-serif;
+    color: #2E2E2E;
 }
 
 .logo:hover {
     color: #606051;
 }
 
-.header {
-    padding: 17px 0;
-    margin-bottom: 89px;
-}
-
-.header__content-wrapper,
-.footer__content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .navigation__menu {
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 
 .navigation__item {
@@ -49,48 +49,44 @@ body {
 
 .navigation__link {
     text-decoration: none;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 12px;
+    transition: all 0.3s;
+    font: 12px 'Oxygen', sans-serif;
     text-transform: uppercase;
     color: #2E2E2E;
-    transition: color 0.3s;
 }
 
 .navigation__link:hover {
     color: #606051;
 }
 
-.main__text-wrapper {
+.main__text-content {
     margin-bottom: 113px;
 }
 
 .main__title {
-    font-size: 50px;
-    font-family: 'Lora', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    font: 50px 'Lora', sans-serif;
     color: #2E2E2E;
 }
 
 .main__subtitle {
-    font-size: 17px;
-    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 113px;
+    text-align: center;
+    font: 17px 'Oxygen', sans-serif;
     color: #2E2E2E;
     opacity: 0.63;
-}
-
-.main__title,
-.main__subtitle {
-    text-align: center;
 }
 
 .main__image {
     margin-bottom: 140px;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .main__text {
     margin-bottom: 30px;
-    font-size: 24px;
-    font-family: 'Oxygen', sans-serif;
+    font: 24px 'Oxygen', sans-serif;
     color: #101315;
 }
 
@@ -101,19 +97,18 @@ body {
     background-repeat: no-repeat;
 }
 
-.footer .logo {
+.footer__logo {
     color: #FFFFFF;
-    transition: color 0.3s;
 }
 
-.footer .logo:hover {
+.footer__logo:hover {
     color: #DCDCDC;
-    transition: color 0.3s;
 }
 
 .footer .navigation__link {
     color: #FFFFFF;
     opacity: 0.6;
+    transition: all 0.3s;
 }
 
 .footer .navigation__link:hover {
